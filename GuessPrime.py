@@ -29,10 +29,10 @@ for guessTaken in range(1, 6):
     if guess not in primes:
         print('هذا العدد ليس ضمن القائمة')
         continue 
-    if guess != secretNumber and (guess - secretNumber)>=0 and (guess - secretNumber)>=10 :
+    if guess != secretNumber and (guess - secretNumber)>0 and (guess - secretNumber)>=10 :
         print('هذا العدد أكبر بكثير من العدد المطلوب، اِختر عددا أوليًّا أقل بكثير')
         print('🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇 🡇')
-    elif guess != secretNumber and (guess - secretNumber)>=0 and (guess - secretNumber)<10:
+    elif guess != secretNumber and (guess - secretNumber)>0 and (guess - secretNumber)<10:
         print('هذا العدد أكبر من العدد المطلوب، اِختر عددا أوليًّا أقل')
         print('🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻 🡻')
     elif guess != secretNumber and (guess - secretNumber)<0 and (guess - secretNumber)<=(-10):
